@@ -12,57 +12,82 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 7%;
+    margin-bottom: 3%;
 }
 
-.navigatie {
-    background-color: rgb(21, 61, 108);
+/***** home page navigatie ******/
+.nav {
+    display: flex;
+}
+
+.nav img {
+    width: 12em;
+}
+
+/***** navigatie bar bottom *****/
+
+.menu {
+    display: flex;
     position: fixed;
-    bottom: 0;
-    width: 100%;
     overflow: hidden;
-
-}
-
-/*
-.navigatie ul {
-    list-style-type: none;
-    text-align: center;
-} 
-*/
-
-.navigatie img {
-    width: 10%;
-}
-
-.navigatie a {
+    bottom: 0%;
     width: 100%;
-    justify-content: flex;
-
-
+    background-color: rgb(21, 61, 108);
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*
-.navigatie a {
-    display: inline-block;
-    padding: 1em;
+.menu img {
+    justify-content: space-evenly;
+    height: 3em;
+    width: 3em;
+    padding: 0.75em;
 }
 
-.navigatie a:hover {
-    background-color: #777;
-    transition: 1s;
+/******** index1.html ons verhaal *******/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: aliceblue;
+    color: rgb(117, 117, 118);
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 1em ;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
 }
-*/
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-style: italic;
+}
+
+h2, h3 {
+    font-weight: 900;
+}
 
 
-/********** index5.htlm ********/
+
+/********** index5.htlm plastic melden ********/
 
 form {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    overflow: hidden;
+
 }
+
 form:focus {
     border: 3px solid #555;
-  }
+}
