@@ -21,27 +21,30 @@ h2,
 h3,
 h4,
 h5 {
-    color: aliceblue;
     color: rgb(117, 117, 118);
     font-size: small;
     font-family: sans-serif;
-    z-index: 2;
     line-height: 1.75em;
     margin-right: 2em;
     margin-left: 2em;
+    font-weight: lighter;
 }
 
 h1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 0.5em;
 }
 
-
-h2,
-h3 {
-    font-weight: 900;
+h2 {
+    margin-bottom: 1em;
 }
+
+h3 {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
 
 /***** navigatie bar bottom *****/
 
@@ -72,7 +75,6 @@ h3 {
 
 .nav img {
     width: 12em;
-    z-index: 2;
 }
 
 .whale {
@@ -85,6 +87,7 @@ h3 {
     height: 10em;
     position: fixed;
     bottom: 0.75em;
+    z-index: -1;
 }
 
 footer {
@@ -117,25 +120,13 @@ footer {
 
 /******* index2.html help mee *********/
 
-/****
 button {
     background-color: rgb(54, 104, 162);
     border: none;
-    margin: 1.5em;
     border-radius: 1.5em;
     transition-duration: 0.4s;
-    z-index: 2;
-    float: :right;
-}
-***/
-
-button {
-    background-color: rgb(54, 104, 162);
-    border: none;
-    margin: 1.5em;
-    border-radius: 1.5em;
-    transition-duration: 0.4s;
-    float: right;
+    margin-left: 2.5em;
+    margin-top: 1em;
 }
 
 button a {
@@ -166,12 +157,6 @@ button:hover {
     width: 20em;
 }
 
-.bechrijving {
-    display: block;
-    float: right;
-    padding-bottom: 1em;
-}
-
 .statistieken {
     display: flex;
     overflow: hidden;
@@ -188,10 +173,15 @@ span {
 .statistieken img {
     width: 10em;
     height: 10em;
-
 }
 
-
+span {
+    color: rgb(117, 117, 118);
+    font-size: medium;
+    font-family: sans-serif;
+    line-height: 1.75em;
+    font-weight: lighter;
+}
 
 /********** index5.htlm plastic melden ********/
 
