@@ -1,8 +1,3 @@
-* {
-    padding: 0%;
-    margin: 0%;
-}
-
 body {
     background-color: rgb(202, 230, 239);
 }
@@ -12,16 +7,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    margin-top: 7%;
+    margin-top: 3%;
     margin-bottom: 3%;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5 {
-    color: rgb(117, 117, 118);
+p {
+    color: rgb(32, 32, 32);
     font-size: small;
     font-family: sans-serif;
     line-height: 1.75em;
@@ -31,20 +25,23 @@ h5 {
 }
 
 h1 {
-    text-align: center;
-    font-size: 16px;
-    padding-bottom: 0.5em;
-}
-
-h2 {
-    margin-bottom: 1em;
-}
-
-h3 {
-    margin-top: 1em;
+    font-size: 16x;
     font-weight: bold;
 }
 
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.italic {
+    font-weight: lighter;
+    font-style: italic;
+}
 
 /***** navigatie bar bottom *****/
 
@@ -65,16 +62,17 @@ h3 {
     height: 3em;
     width: 3em;
     padding: 0.75em;
-    z-index: 3;
 }
 
 /***** index.html home pagina navigatie ******/
+
 .nav {
     display: flex;
+    justify-content: center;
 }
 
 .nav img {
-    width: 12em;
+    width: 11.5em;
 }
 
 .whale {
@@ -106,13 +104,8 @@ footer {
     height: 10em;
     position: fixed;
     bottom: 0.75em;
-    z-index: -1;
+    z-index: -2;
 }
-
-.italic {
-    italic
-}
-
 
 /******** index1.html ons verhaal *******/
 
@@ -122,9 +115,8 @@ footer {
 
 button {
     background-color: rgb(54, 104, 162);
-    border: none;
     border-radius: 1.5em;
-    transition-duration: 0.4s;
+    border: none;
     margin-left: 2.5em;
     margin-top: 1em;
 }
@@ -138,22 +130,62 @@ button a {
     font-size: 16px;
 }
 
-button:hover {
-    background-color: rgb(48, 156, 193);
-    color: white;
-    transition-duration: 0.4s;
+.foto {
+    float: right;
+    margin: 1em;
+}
+
+.foto img {
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+}
+
+.foto2 {
+    float: left;
+    margin: 1em;
+}
+
+.foto2 img {
+    width: 8em;
+    height: 8em;
+    border-radius: 1em;
 }
 
 /******* index4.html statistieken *********/
 
 .grafiek {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .grafiek img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 15em;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+.legenda {
+    margin-left: 2em;
+    display: flex;
+}
+
+.legenda img {
+    height: 3em;
+    width: 3em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+.kaart {
+    display: flex;
+    justify-content: center;
+}
+
+.kaart img {
+    height: 25em;
     width: 20em;
 }
 
@@ -164,19 +196,13 @@ button:hover {
     align-items: center;
 }
 
-span {
-    float: left;
-    color: rgb(117, 117, 118);
-    font-size: 1.5em;
-}
-
 .statistieken img {
     width: 10em;
     height: 10em;
 }
 
 span {
-    color: rgb(117, 117, 118);
+    color: rgb (32, 32, 32);
     font-size: medium;
     font-family: sans-serif;
     line-height: 1.75em;
@@ -186,48 +212,26 @@ span {
 /********** index5.htlm plastic melden ********/
 
 form {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    z-index: 3;
+    margin: 0 25% 0 25%;
 }
 
-form:focus {
-    border: 3px solid #555;
+.formulier {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-left: 0.2em;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
 }
 
 .verzenden {
     background-color: rgb(54, 104, 162);
-    border: none;
-    margin: 1.5em;
     border-radius: 1.5em;
-    transition-duration: 0.4s;
-    display: flex;
-    justify-content: right;
-    z-index: 2;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    border: none;
+    margin-top: 0.5em;
+    padding: 0.5em;
 }
 
-.verzenden :hover {
-    background-color: rgb(48, 156, 193);
-    color: white;
-    transition-duration: 0.4s;
-}
-
-.achtergrond {
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-}
-
-.achtergrond img {
-    height: 30em;
-    width: 22em;
+.beschrijving {
+    padding-top: 0.5em;
 }

@@ -10,32 +10,51 @@
 
 <body>
     <header>
-        <img class=logo src="img/logo1.png" alt="logo">
+        <a href="index.html">
+            <img class=logo src="img/logo1.png" alt="logo">
+        </a>
     </header>
 
     <main>
-        <h1>Help mee!</h1>
+        <h1>Plastic alart</h1>
 
-        <div class="achtergrond">
-            <img src="img/achtergrondformulier.png" alt="achtergrondformulier">
-        </div>
+        <h2>Samen tegen plastic</h2>
 
         <form>
-            <label for="Voornaam">Voornaam:</label><br>
-            <input type="text" id="Voornaam" name="Voornaam"><br>
-            <label for="Achternaam">Achternaam:</label><br>
-            <input type="Achternaam" id="Achternaam" name="Achternaam">
+            <div>
+                <label for="Voornaam">Voornaam:</label>
+                <input type="text">
+            </div>
 
+            <div>
+                <label for="Achternaam">Achternaam:</label>
+                <input type="text">
+            </div>
 
-            <p>Is er een dier in gevaar:</p>
+            <div>
+                <label>Locatie & tijd:</label>
+                <textarea type="text" cols="23" rows="3"></textarea>
+            </div>
 
+            <p class="formulier">
+                Is er een dier in gevaar?
+            </p>
 
-            <input type="radio" id="Ja" name="Ja" value="Ja">
-            <label for="Ja">Ja</label>
-            <input type="radio" id="Nee" name="Nee" value="Nee">
-            <label for="Nee">Nee</label>
+            <div>
+                <input type="radio">
+                <label for="Ja">Ja</label>
+                <input type="radio">
+                <label for="Nee">Nee</label>
+            </div>
 
-            <input class=verzenden type="submit" value="Verzenden">
+            <div class="beschrijving">
+                <label>Beschrijving:</label>
+                <textarea type="text" cols="23" rows="7"></textarea>
+            </div>
+
+            <div>
+                <input class=verzenden type="submit" value="Verzenden">
+            </div>
         </form>
 
         <div class="walvis">
