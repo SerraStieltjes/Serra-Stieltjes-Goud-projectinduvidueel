@@ -25,14 +25,10 @@ p {
 
 h1 {
     font-size: 16px;
-    font-weight: bold;
-}
-
-h2 {
     text-align: center;
-    font-size: 18px;
 }
 
+h2,
 h3 {
     font-weight: bold;
 }
@@ -42,7 +38,7 @@ h3 {
     font-style: italic;
 }
 
-/***** navigatie bar bottom *****/
+/***** navigatie bar bottom index,1,2,4,5 *****/
 
 .menu {
     display: flex;
@@ -58,11 +54,11 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     height: 3em;
-    width: 3em;    
+    width: 3em;
     padding: 0.75em;
 }
 
-/***** index.html home pagina navigatie ******/
+/***** index.html home ******/
 
 .nav {
     display: flex;
@@ -90,7 +86,7 @@ footer {
     padding-top: 5em;
 }
 
-/******** index1,2,4,5 ********/
+/******** index1,2,4,5 walvis achtergrond ********/
 
 .walvis {
     display: flex;
@@ -107,7 +103,15 @@ footer {
 
 /******** index1.html ons verhaal *******/
 
+.info-foto {
+    float: left;
+    margin: 1em;
+}
 
+.info-foto img {
+    width: 6em;
+    height: 6em;
+}
 
 /******* index2.html help mee *********/
 
@@ -116,7 +120,8 @@ button {
     border-radius: 1.5em;
     border: none;
     margin-left: 2.5em;
-    margin-top: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 1.5em;
 }
 
 button a {
@@ -185,6 +190,7 @@ button a {
 .kaart img {
     height: 25em;
     width: 20em;
+    margin-top: 1.5em;
 }
 
 .statistieken {
@@ -199,15 +205,16 @@ button a {
     height: 10em;
 }
 
-span {
-    color: rgb (117, 117, 118);
+div span {
     font-size: medium;
     font-family: sans-serif;
     line-height: 1.75em;
+    margin-right: 2em;
+    margin-left: 2em;
     font-weight: lighter;
 }
 
-/********** index5.htlm plastic melden ********/
+/********** index5.htlm plastic alert  ********/
 
 form {
     margin: 0 25% 0 25%;
@@ -230,6 +237,16 @@ form {
     padding: 0.5em;
 }
 
+.verzenden {
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
 .beschrijving {
     padding-top: 0.5em;
+}
+
+div label {
+    font-family: sans-serif;
 }
